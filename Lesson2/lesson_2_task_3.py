@@ -1,6 +1,9 @@
+from math import ceil 
+
 def square(side):
-    return side*side
+    result = side*side
+    print(ceil(result))
 
+square(2.3)
+square(9)
 
-result = square(round(3.8))
-print(result)
