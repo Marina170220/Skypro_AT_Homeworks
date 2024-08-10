@@ -1,11 +1,9 @@
-import pytest
 from Lesson9.Pages.Employee import Employee
 from Lesson9.Pages.DataBase import DataBase
 
 api = Employee("https://x-clients-be.onrender.com")
-db = DataBase()
+db = DataBase("postgresql+psycopg2://x_clients_db_3fmx_user:mzoTw2Vp4Ox4NQH0XKN3KumdyAYE31uq@dpg-cour99g21fec73bsgvug-a.oregon-postgres.render.com/x_clients_db_3fmx")
     
-
 
 def test_get_list_of_employers():
     db.create_company('Test company', 'test')
